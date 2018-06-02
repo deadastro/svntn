@@ -2,16 +2,12 @@
 
 body {
     font-family: 'Source Code Pro', monospace;
+    overflow-x: hidden;
 }
 
 header {
+    background: #ffdbdb;
     height: 100vh;
-    background-image: url("../img/bg.jpg");
-    background-size: cover;
-}
-
-.nav-link:hover {
-    text-decoration: line-through;
 }
 
 .btn-blue {
@@ -19,4 +15,26 @@ header {
     color: white;
     font-size: 14px;
     border-radius: 0;
+}
+
+.btn-blue:hover {
+    background-color: white;
+    color: blue;
+}
+
+.image {
+    height: 200px;
+    background-image: url("../img/seventeens.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 25% 25%
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: line-through;
+    color: blue;
 }
