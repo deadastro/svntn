@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+header {
+    height: 100vh;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+.nav-link:hover {
+    text-decoration: line-through;
+}
+
+.btn-blue {
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    border-radius: 0;
+}
