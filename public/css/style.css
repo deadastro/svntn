@@ -1,13 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
+@media (max-width: 600px) {
+    body {
+        animation: none !important;
+        background-position: 0 0 !important;
+    }
+}
+
 body {
     font-family: 'Source Code Pro', monospace;
-    overflow-x: hidden;
     background: #FFD2D2;
     background-image: url("../img/logo.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 20%
+    background-position: center;
+    height: 100vh;
+    animation: bg 10s linear infinite;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 100% 100%;
+    }
+    
+    50% {
+        background-position: 0 0;
+    }
+    
+    100% {
+        background-position: 100% 100%;
+    }
 }
 
 .btn-blue {
@@ -37,8 +59,13 @@ a:hover {
 
 .navbar-toggler {
     color: #0808C4;
+    padding: 10px;
+    background: #FFD2D2;
+    border-radius: 0;
+    min-width: 40px;
 }
 
 .navbar-toggler.clicked {
     color: #FFD2D2;
+    background: #0808C4;
 }

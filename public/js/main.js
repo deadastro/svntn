@@ -5,4 +5,4 @@ $('.navbar-toggler').on('click', function(){
     } else {
         $('.fas').removeClass('fa-times').addClass('fa-bars');
     }
-})
+});
