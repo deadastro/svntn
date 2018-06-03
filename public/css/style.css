@@ -3,11 +3,11 @@
 body {
     font-family: 'Source Code Pro', monospace;
     overflow-x: hidden;
-}
-
-header {
-    background: #ffdbdb;
-    height: 100vh;
+    background: #FFD2D2;
+    background-image: url("../img/logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 20%
 }
 
 .btn-blue {
@@ -22,19 +22,23 @@ header {
     color: blue;
 }
 
-.image {
-    height: 200px;
-    background-image: url("../img/seventeens.png");
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: 25% 25%
+.navbar-nav {
+    max-width: 200px;
 }
 
 a {
-    color: blue;
+    color: #FFD2D2;
 }
 
 a:hover {
-    text-decoration: line-through;
-    color: blue;
+    text-decoration: line-through !important;
+    color: #FFD2D2;
+}
+
+.navbar-toggler {
+    color: #0808C4;
+}
+
+.navbar-toggler.clicked {
+    color: #FFD2D2;
 }
