@@ -7,6 +7,16 @@
     }
 }
 
+@media (max-width: 400px) {
+    body {
+        background-image: none !important;
+    }
+    
+    .navbar {
+        background: #0808C4;
+    }
+}
+
 body {
     font-family: 'Source Code Pro', monospace;
     background: #FFD2D2;
@@ -33,39 +43,81 @@ body {
 }
 
 .btn-blue {
-    background-color: blue;
+    background: blue;
     color: white;
     font-size: 14px;
     border-radius: 0;
 }
 
 .btn-blue:hover {
-    background-color: white;
+    background: white;
     color: blue;
 }
 
-.navbar-nav {
-    max-width: 200px;
+.btn-red {
+    background-color: white;
+    color: #0808C4;
+    font-size: 14px;
+    border-radius: 0;
 }
 
-a {
+.btn-red:hover {
+    background: red;
+    color: white;
+}
+
+.navbar-nav {
+    max-width: 100px;
+    background: #0808C4;
+}
+
+.nav-link {
     color: #FFD2D2;
 }
 
-a:hover {
+.nav-link:hover {
     text-decoration: line-through !important;
     color: #FFD2D2;
 }
 
 .navbar-toggler {
     color: #0808C4;
-    padding: 10px;
     background: #FFD2D2;
     border-radius: 0;
-    min-width: 40px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .navbar-toggler.clicked {
     color: #FFD2D2;
     background: #0808C4;
+}
+
+a {
+    color: #0808C4;
+}
+
+a:hover {
+    text-decoration: line-through !important;
+    color: #0808C4;
+}
+
+p {
+    font-size: 14px;
+}
+
+.album {
+    height: 200px;
+    width: 200px;
+/*    background: #0808C4;*/
+    background-image: url("../img/album.png");
+    background-size: cover;
+    display: inline-block;
+}
+
+.btn-main > i {
+    margin-right: 8px;
+    position: relative;
+    top: 2px;
 }
