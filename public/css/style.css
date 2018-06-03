@@ -17,6 +17,27 @@
     }
 }
 
+/*----------------------- Preloader -----------------------*/
+
+.preloader-wrapper {
+    height: 100%;
+    width: 100%;
+    background: #0808C4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.preloader-wrapper .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
 body {
     font-family: 'Source Code Pro', monospace;
     background: #FFD2D2;
